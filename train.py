@@ -185,8 +185,8 @@ def train(args, log, model, dataloaders, criterion, optimizer, scheduler, start_
 def run(args, log):
     
     df = pd.read_csv(args.df_path)
-    df_train = df[df['Fold']!=args.fold]
-    df_valid = df[df['Fold']==args.fold]
+    df_train = df[df['fold']!=args.fold]
+    df_valid = df[df['fold']==args.fold]
     dfs = {}
     dfs['train'] = df_train
     dfs['val'] = df_valid

@@ -27,7 +27,7 @@ def get_checkpoints(args):
 
 def run(args):
     df = pd.read_csv(args.df_path)
-    df_train = df[df['Fold']!=args.fold]
+    df_train = df[df['fold']!=args.fold]
 
     model = get_model(args).cuda()  
     dataloader = get_dataloader(args.data_dir, df_train, 'train', args.pretrain, args.batch_size)

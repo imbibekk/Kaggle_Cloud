@@ -127,14 +127,6 @@ def generate_transforms():
                                 A.ShiftScaleRotate(0.5, 0, 0, border_mode=0),
                                 A.HorizontalFlip(),
                                 A.VerticalFlip(),
-                                A.OneOf([
-                                    A.IAASharpen(alpha=(0.1, 0.3), p=0.5),
-                                    A.CLAHE(p=0.8),
-                                    A.GaussNoise(var_limit=(10.0, 50.0), p=0.5),
-                                    A.ISONoise(color_shift=(0.01, 0.05), intensity=(0.1, 0.5), p=0.3),
-                                ], p=0.8),
-                                A.RandomBrightnessContrast(p=0.8),
-                                A.RandomGamma(p=0.8),
                                 A.Normalize(),
                                 ])
     
