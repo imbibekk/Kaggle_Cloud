@@ -64,7 +64,7 @@ python submit.py --initial_ckpt ./runs/FPN_effb4/fold_0/checkpoints/0_model_ema_
 ```
 This should create a `submission_fold0.csv` file. To submit this to kaggle, run
 ```
-kaggle competitions submit -c understanding_cloud_organization -f submission.csv -m "fold0_submission"
+kaggle competitions submit -c understanding_cloud_organization -f submission_fold0.csv -m "fold0_submission"
 ```
 >Train 5-folds and enemble them to get better results on LB
 
