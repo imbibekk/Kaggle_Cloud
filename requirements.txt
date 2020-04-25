@@ -1,0 +1,8 @@
+kaggle
+tqdm
+pandas
+torch
+torchvision
+albumentations
+iterative-stratification
+segmentation-models-pytorch
