@@ -36,7 +36,7 @@ python make_splits.py
 ```
 This should save `train_splits.csv` in data-folder
 
-## Pre-Training
+### Pre-Training
 To pretrain using train and test set, run
 ```
 python train.py --log_dir runs --model_name FPN_effb4 --pretrain True --num_epochs 5 --scheduler_name linear_warmup --data_dir ./data
