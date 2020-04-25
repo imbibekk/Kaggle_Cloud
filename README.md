@@ -56,7 +56,10 @@ To take Exponential-moving-average of top-5 checkpoints, run
 python swa.py --log_dir runs --model_name FPN_effb4 --fold 0
 ```
 This should save a `0_model_ema_5.pth` checkpoint file in `./runs/FPN_effb4/fold_0/checkpoints` 
-
+I have uploaded this file as [Kaggle dataset](https://www.kaggle.com/bibek777/cloudfold0). You can download it via
+```
+kaggle datasets download -d bibek777/cloudfold0
+```
 ### Make Submission
 To create a submssion-csv file using the best checkpoint file, run
 ```
