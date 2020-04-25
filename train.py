@@ -232,7 +232,7 @@ def parse_args():
                     help='datasest directory')
     parser.add_argument('--df_path', default='./data/train_splits.csv',
                     help='df_path')                 
-    parser.add_argument('--fold', type=int, default=1,
+    parser.add_argument('--fold', type=int, default=0,
                     help='which fold to use for training')
     parser.add_argument('--pretrain',type=bool, default=False,
                     help='whether pretrain the network using train+test images')
